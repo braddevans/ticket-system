@@ -9,6 +9,11 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 
 public class DatabaseImpl {
+    //todos
+    //todo: need to ing the database every 15 seconds for new tickets
+    //todo: when the tickets are complete the user goes into the admin tab and marks the ticket as complete buy imputing the ticket id and adding a note
+    //todo: when completing tickets or assigning them we will have to reference a user list of staff
+
     private static DatabaseImpl instance;
     public static String host     = "";
     public static String port     = "";
