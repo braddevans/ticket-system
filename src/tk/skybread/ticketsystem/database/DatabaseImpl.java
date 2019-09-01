@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 
-public class DatabaseImpl implements Database {
+public class DatabaseImpl {
     private static DatabaseImpl instance;
     public static String host     = "";
     public static String port     = "";
@@ -18,7 +18,6 @@ public class DatabaseImpl implements Database {
     public static Connection con;
 
     // connect
-    @Override
     public static void connect() {
         if (!isConnected()) {
             try {
